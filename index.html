@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Reencaixe - Reutilização de Madeira</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>REENCAIXE</h1>
+<p>Sistema Modular Estrutural a partir do Reaproveitamento de Madeira</p>
+
+<nav>
+<a href="#sobre">Projeto</a>
+<a href="#equipe">Equipe</a>
+<a href="#doar">Doar Madeira</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+<section id="sobre">
+<h2>Sobre o Projeto</h2>
+
+<p>
+O projeto <b>REENCAIXE</b> busca reaproveitar madeira e móveis descartados para criar
+novos sistemas modulares sustentáveis.
+</p>
+
+<p>
+Grande parte dos móveis descartados ainda possui boa integridade estrutural,
+mas acaba sendo jogada fora por mudanças estéticas ou falta de adaptação.
+Nosso projeto coleta essas peças e avalia sua qualidade para reutilização.
+</p>
+
+<p>
+Assim conseguimos reduzir resíduos, economizar matéria-prima e contribuir para
+uma economia circular mais eficiente.
+</p>
+
+</section>
+
+
+<section id="equipe">
+
+<h2>Nossa Equipe</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Isabella Anjos</h3>
+<p>Fundadora</p>
+</div>
+
+<div class="card">
+<h3>Sophia Wolf</h3>
+<p>Fundadora</p>
+</div>
+
+<div class="card">
+<h3>Mariana Wendt</h3>
+<p>Mentora</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="doar">
+
+<h2>Doar Móvel ou Madeira</h2>
+
+<p>Preencha as informações abaixo para avaliarmos se a madeira pode ser reutilizada.</p>
+
+<form id="formMadeira">
+
+<label>De onde vem o móvel ou madeira?</label>
+<input type="text" required>
+
+<label>O móvel ainda está firme?</label>
+<select id="integridade">
+<option value="boa">Sim, está firme</option>
+<option value="media">Tem alguns danos</option>
+<option value="ruim">Está muito danificado</option>
+</select>
+
+<label>A madeira suporta peso?</label>
+<select id="resistencia">
+<option value="alta">Alta</option>
+<option value="media">Média</option>
+<option value="baixa">Baixa</option>
+</select>
+
+<label>A madeira está muito inchada ou deformada?</label>
+<select id="inchamento">
+<option value="baixo">Não</option>
+<option value="medio">Um pouco</option>
+<option value="alto">Sim</option>
+</select>
+
+<label>Existem riscos ou danos na superfície?</label>
+<select id="danos">
+<option value="nenhum">Não</option>
+<option value="moderado">Alguns</option>
+<option value="grave">Muitos</option>
+</select>
+
+<label>Possui tinta, cola ou contaminantes?</label>
+<select id="contaminacao">
+<option value="nenhuma">Não</option>
+<option value="leve">Pouco</option>
+<option value="grave">Muito</option>
+</select>
+
+<label>Possui ferragens (parafusos, dobradiças)?</label>
+<select id="ferragens">
+<option value="sim">Sim</option>
+<option value="nao">Não</option>
+</select>
+
+<button type="button" onclick="avaliar()">Avaliar Madeira</button>
+
+</form>
+
+<div id="resultado"></div>
+
+</section>
+
+
+<section id="contato">
+
+<h2>Contate-nos</h2>
+
+<p>Email: reencaixesuporte@gmail.com</p>
+<p>SESI - Projeto de inovação</p>
+
+<form>
+
+<input type="text" placeholder="Seu nome">
+
+<input type="email" placeholder="Seu email">
+
+<textarea placeholder="Sua mensagem"></textarea>
+
+<button>Enviar</button>
+
+</form>
+
+</section>
+
+
+<footer>
+
+<p>Projeto REENCAIXE © 2026</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
